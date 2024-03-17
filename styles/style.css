@@ -106,8 +106,6 @@ ol {
   outline-offset: 1px;
 }
 
-
-/*?*/
 .search-form__label:hover .search-form__label-text { 
   text-decoration: underline;
 }
@@ -190,10 +188,11 @@ ol {
   min-height: 34px;
 }
 
+/* Поставил ширину фиксированную здесь, но в сомнениях: правильно ли это */
 .content__details {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 398px;
   height: 100%;
 }
 
@@ -211,11 +210,13 @@ ol {
   color: #545050;
 }
 
+/* добавил flex-start для того, чтобы скроллбар выходил за пределы зоны контента */
 .content__list {
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
   height: 298px;
-  gap: 27px;
+  gap: 26px;
   overflow: auto;
   position: relative;
 }
